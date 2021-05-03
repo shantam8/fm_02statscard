@@ -1,2 +1,77 @@
 @import "colors";
 @import "fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $veryDarkBlue;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.card {
+  border-radius: 6px;
+  overflow: hidden;
+  width: 20.5rem;
+  margin: 5.5625rem auto;
+  color: antiquewhite;
+
+  .headerImage {
+    background-color: $softViolet;
+    opacity: 50%;
+    height: auto;
+    img {
+      content: url("/images/image-header-mobile.jpg");
+      width: 100%;
+      
+    }
+  }
+
+  .details {
+    background-color: $darkDesaturatedBlue;
+    padding: 2.75rem 2.25rem 0 2.25rem;
+    text-align: center;
+
+    h1 {
+      color: $white;
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+
+      .headerSpan {
+        color: $softViolet;
+      }
+    }
+
+    p {
+      color: $slightlyTransparentWhiteMain;
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 0.75rem;
+      line-height: 1.3rem;
+      margin-bottom: 3rem;
+    }
+
+    .stats {
+      color: $white;
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      font-size: 1.125rem;
+      padding-bottom: 0.75rem;
+    }
+
+    .statsParagraph {
+      color: $slightlyTransparentWhite;
+      font-family: "Lexend Deca", sans-serif;
+      font-weight: 400;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      padding-bottom: 2.25rem;
+    }
+  }
+}

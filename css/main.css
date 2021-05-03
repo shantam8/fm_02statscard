@@ -1,3 +1,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #090b1a;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.card {
+  border-radius: 6px;
+  overflow: hidden;
+  width: 20.5rem;
+  margin: 5.5625rem auto;
+  color: antiquewhite;
+}
+
+.card .headerImage {
+  background-color: #aa5cdb;
+  opacity: 50%;
+  height: auto;
+}
+
+.card .headerImage img {
+  content: url("/images/image-header-mobile.jpg");
+  width: 100%;
+}
+
+.card .details {
+  background-color: #1b1938;
+  padding: 2.75rem 2.25rem 0 2.25rem;
+  text-align: center;
+}
+
+.card .details h1 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card .details h1 .headerSpan {
+  color: #aa5cdb;
+}
+
+.card .details p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.3rem;
+  margin-bottom: 3rem;
+}
+
+.card .details .stats {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  padding-bottom: 0.75rem;
+}
+
+.card .details .statsParagraph {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  padding-bottom: 2.25rem;
+}
 /*# sourceMappingURL=main.css.map */
