@@ -10,8 +10,6 @@
 body {
   background-color: #090b1a;
   font-size: 16px;
-  font-family: "Inter", sans-serif;
-  font-family: "Lexend Deca", sans-serif;
 }
 
 .card {
@@ -22,15 +20,53 @@ body {
   color: antiquewhite;
 }
 
+@media screen and (min-width: 1200px) {
+  .card {
+    width: 69.375rem;
+    height: 29.125rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
 .card .headerImage {
+  width: 100%;
+  height: 241px;
+  position: relative;
+}
+
+@media screen and (min-width: 1200px) {
+  .card .headerImage {
+    width: 33.75rem;
+    height: 100%;
+  }
+}
+
+.card .headerImage::before {
+  content: "";
+  position: absolute;
   background-color: #aa5cdb;
+  height: 100%;
+  width: 100%;
   opacity: 50%;
-  height: auto;
 }
 
 .card .headerImage img {
   content: url("/images/image-header-mobile.jpg");
   width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .card .headerImage img {
+    content: url("/images/image-header-desktop.jpg");
+    width: 540px;
+    height: 466px;
+  }
 }
 
 .card .details {
@@ -39,12 +75,27 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .card .details {
+    padding: 4.625rem 7.625rem 4rem 4.625rem;
+    text-align: left;
+  }
+}
+
 .card .details h1 {
   color: white;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .card .details h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 2.375rem;
+  }
 }
 
 .card .details h1 .headerSpan {
@@ -59,12 +110,37 @@ body {
   margin-bottom: 3rem;
 }
 
+@media screen and (min-width: 1200px) {
+  .card .details p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 5.125rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card .details .detailStats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+}
+
 .card .details .stats {
   color: white;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 1.125rem;
-  padding-bottom: 0.75rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .card .details .stats {
+    font-size: 1.25rem;
+  }
 }
 
 .card .details .statsParagraph {
@@ -73,6 +149,15 @@ body {
   font-weight: 400;
   font-size: 0.75rem;
   text-transform: uppercase;
+  padding-top: 0.75rem;
   padding-bottom: 2.25rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .card .details .statsParagraph {
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
