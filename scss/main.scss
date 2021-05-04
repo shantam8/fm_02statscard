@@ -48,11 +48,11 @@ body {
     }
 
     img {
-      content: url("./images/image-header-mobile.jpg");
+      content: url("../images/image-header-mobile.jpg");
       width: 100%;
 
       @media screen and (min-width: $breakpoint) {
-        content: url("./images/image-header-desktop.jpg");
+        content: url("../images/image-header-desktop.jpg");
         width: 540px;
         height: 466px;
       }
